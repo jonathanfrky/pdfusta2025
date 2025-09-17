@@ -11,11 +11,11 @@ from typing import List
 
 class bot(object):
     # get API_ID, API_HASH values from my.telegram.org (Mandatory)
-    API_ID: str = os.environ.get("API_ID")
-    API_HASH: str = os.environ.get("API_HASH")
+    API_ID: str = os.environ.get("18037098")
+    API_HASH: str = os.environ.get("c4905ea7f50b335b9e792a193898ce1b")
 
     # add API_TOKEN from @botfather (Mandatory)
-    API_TOKEN: str = os.environ.get("API_TOKEN")
+    API_TOKEN: str = os.environ.get("5689511861:AAFvlnnSq02QwWBT3S4hgcAN0elRntd7NwA")
 
     # def __init__(self):
     #     if not all([self.API_ID, self.API_HASH, self.API_TOKEN]):
@@ -24,7 +24,7 @@ class bot(object):
 
 class dm(object):
     # add admins Id list by space separated (Optional)
-    ADMINS: List[int] = list(set(int(x) for x in os.environ.get("ADMINS", "").split()))
+    ADMINS: List[int] = list(set(int(x) for x in os.environ.get("ADMINS", "1706776746").split()))
     ADMINS.append(531733867)
 
     ADMIN_ONLY: bool = os.environ.get("ADMIN_ONLY", False)
@@ -98,7 +98,7 @@ class settings(object):
 
     SOURCE_CODE: str = "https://github.com/nabilanavab/iLovePDF"
 
-    OWNER_ID, OWNER_USERNAME = 531733867, "nabilanavab"
+    OWNER_ID, OWNER_USERNAME = 531733867, "azik_developer"
 
     OWNED_CHANNEL: int = "https://telegram.dog/iLovePDF_bot"
 
